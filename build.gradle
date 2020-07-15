@@ -9,16 +9,7 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
-maven {
-    url 'https://pkgs.dev.azure.com/CBDDigital/_packaging/CBDDigital/maven/v1'
-    name 'CBDDigital'
-    authentication {
-        basic(BasicAuthentication)
-    }
-}
-plugins {
-  id "net.linguica.maven-settings" version "0.5"
-}
+
 allprojects {
     repositories {
         jcenter()
